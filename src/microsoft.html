@@ -10,43 +10,69 @@
 </head>
 
 <body>
-    <div class="navbar flex justify-between items-center p-4 bg-white">
-        <div class="flex justify-center items-center md:order-2">
-            <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
-                <div class="line h-0.5 w-6 my-1 bg-black"></div>
-                <div class="line h-0.5 w-6 my-1 bg-black"></div>
-                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+    <div class="container mx-auto">
+        <div class="navbar flex justify-between items-center p-4">
+            <div class="flex justify-center items-center md:order-2">
+                <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+                    <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                </div>
+                <div class="search md:hidden">Search Icon</div>
             </div>
-            <div class="search md:hidden">Search Icon</div>
-        </div>
-        <div class="logo text-center md:order-1 flex">
-            <div>Microsoft</div>
-            <div class="features absolute inset-0 md:flex mx-4 space-x-2 -translate-x-96">
-                <div class="fitems">Microsoft 365</div>
-                <div class="fitems">Teams </div>
-                <div class="fitems">Windows </div>
-                <div class="fitems">Surface </div>
-                <div class="fitems">Xbox </div>
-                <div class="fitems">Support</div>
+            <div class="logo text-center md:order-1 flex">
 
+                <div class="p-4"><img src="download.png" alt=""></div>
+                <div class="features absolute w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0">
+                    <div class="fitems">Microsoft 365</div>
+                    <div class="fitems">Teams </div>
+                    <div class="fitems">Windows </div>
+                    <div class="fitems">Surface </div>
+                    <div class="fitems">Xbox </div>
+                    <div class="fitems">Support</div>
+
+                </div>
+            </div>
+            <div class="cart text-center md:order-3 flex">
+                <div class="search hidden md:block">All Microsoft Search Icon</div>
+                <div>Cart/Account</div>
             </div>
         </div>
-        <div class="cart text-center md:order-3 flex">
-            <div class="search hidden md:block">All Microsoft Search Icon</div>
-            <div>Cart/Account</div>
+
+        <div class="slider flex flex-col-reverse md:flex-row bg-gray-100">
+            <div class="left flex flex-col justify-center items-center md:items-baseline py-12">
+                <h1 class="text-2xl font-medium md:text-4xl mx-5">Surface Pro 9</h1>
+                <p class="w-3/4 mx-5 text-center md:text-left">Keep spirits bright with a game-changing combo of laptop
+                    power and tablet flexibility—all in one ultra-portable device</p>
+                <button class="text-white bg-black px-4 py-2 y-6 font-bold mx-5">Learn more</button>
+            </div>
+            <div class="right">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-All-Colors-FY23HOL:VP1-539x440"
+                    alt="" class="w-48 md:w-[64rem]" />
+
+            </div>
+
+
         </div>
-    </div>
 
-    <div class="slider flex flex-col-reverse md:flex-row bg-gray-400">
-        <div class="left">
-            <h1 class="text-4xl">Surface Pro 9</h1>
+        <div class="promo">
+            <div class="item">
+                <img src="icon-LL-Windows-Logo-80x80 (1).webp" alt="">
+                <span>Choose your Microsoft 365 </span>
+            </div>
+            <div class="item">
+                <img src="icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80.webp" alt="">
+                <span>Explore Surface Devices</span>
+            </div>
+            <div class="item">
+                <img src="icon-LL-Xbox-Logo-80x80.webp" alt="">
+                <span>Buy Xbox Games</span>
+            </div>
+            <div class="item">
+                <img src="icon-LL-Windows-Logo-80x80 (1).webp" alt="">
+                <span>Get Windows 11 </span>
+            </div>
         </div>
-        <div class="right">
-            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-All-Colors-FY23HOL:VP1-539x440" alt="" class=""/>
-
-        </div>
-
-
     </div>
 </body>
 
