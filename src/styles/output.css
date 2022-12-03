@@ -529,6 +529,12 @@ video {
   }
 }
 
+@media (min-width: 860px) {
+  .container {
+    max-width: 860px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -600,6 +606,10 @@ video {
 
 .m-10 {
   margin: 2.5rem;
+}
+
+.m-\[1px\] {
+  margin: 1px;
 }
 
 .m-3 {
@@ -692,10 +702,6 @@ video {
   margin-right: 1rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
-}
-
 .ml-8 {
   margin-left: 2rem;
 }
@@ -706,6 +712,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .block {
@@ -726,6 +736,10 @@ video {
 
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
 }
 
 .contents {
@@ -768,8 +782,16 @@ video {
   height: 1px;
 }
 
+.h-\[23px\] {
+  height: 23px;
+}
+
 .h-4 {
   height: 1rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-\[223px\] {
@@ -825,20 +847,20 @@ video {
   width: 20%;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-4 {
   width: 1rem;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-6 {
+  width: 1.5rem;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[60rem\] {
-  width: 60rem;
+.w-\[108px\] {
+  width: 108px;
 }
 
 .w-\[392px\] {
@@ -855,6 +877,10 @@ video {
 
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .border-separate {
@@ -876,6 +902,10 @@ video {
 
 .resize {
   resize: both;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -910,10 +940,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-y-3 {
-  row-gap: 0.75rem;
-}
-
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -942,12 +968,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .self-center {
@@ -982,6 +1002,11 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
@@ -1029,9 +1054,9 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-purple-100 {
+.bg-\[rgb\(242\2c 242\2c 242\)\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -1044,10 +1069,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-3 {
@@ -1094,9 +1115,9 @@ video {
   padding-bottom: 7rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-6 {
@@ -1107,6 +1128,11 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-1 {
@@ -1170,6 +1196,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1206,6 +1236,10 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-segoe {
+  font-family: Segoeui, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1234,11 +1268,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-\[16px\] {
@@ -1324,6 +1353,12 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@font-face {
+  font-family: "Segoeui";
+
+  src: url("../fonts/SEGOEUI.TTF");
+}
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -1377,6 +1412,12 @@ video {
   text-underline-offset: 8px;
 }
 
+@media (min-width: 640px) {
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:static {
     position: static;
@@ -1423,8 +1464,8 @@ video {
     width: auto;
   }
 
-  .md\:w-\[64rem\] {
-    width: 64rem;
+  .md\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .md\:w-\[8rem\] {
@@ -1468,11 +1509,6 @@ video {
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   }
 
-  .md\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -1492,7 +1528,17 @@ video {
   }
 }
 
+@media (min-width: 860px) {
+  .tablet\:top-0 {
+    top: 0px;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }

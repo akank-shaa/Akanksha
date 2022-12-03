@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/output.css" rel="stylesheet" />
+    <link href="./styles/custom-style.css" rel="stylesheet" />
+
     <link rel="icon" href="" sizes="16*16" type="image/png">
     <title>Microsoft - Cloud, Computers, Apps &amp; Gaming</title>
 </head>
 
-<body class="bg-white font-sans">
-    <div class="container">
-        <div class="navbar flex justify-between items-center py-2">
+<body class="bg-white w-full font-segoe">
+    <div class=" w-full">
+        <div class="navbar flex justify-between items-center">
             <div class="flex justify-center items-center md:order-2">
-                <div class="hamburger inline-block p-2 cursor-pointer md:hidden">
+                <div class="hamburger inline-block cursor-pointer md:hidden pl-3">
                     <div class="line h-px w-4 my-[4px] bg-black "></div>
                     <div class="line h-px w-4 my-[4px] bg-black "></div>
                     <div class="line h-px w-4 my-[4px] bg-black "></div>
                 </div>
-                <div class="search md:hidden w-3 mx-4"><img src="./images//src/search.svg" alt=""></div>
+                <div class="search md:hidden mx-4"><img src="./images/search.png" alt="" class="w-6"></div>
             </div>
 
             <div class="logo text-center md:order-1 flex">
 
-                <div class="p-2 flex justify-center">
-                    <img class="w-[50%]" src="./images/download.png" alt="">
+                <div class=" flex justify-center py-3 px-1 m-[1px]">
+                    <img class="w-[108px] h-[23px]" src="./images/mic.png" alt="">
                 </div>
                 <div class="features absolute md:items-center w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 
                     md:flex md:mx-4 md:space-x-6 -translate-x-96 md:translate-x-0">
@@ -41,18 +43,18 @@
             <div class="cart text-center md:order-3 flex">
                 <div class="search hidden md:block mr-6">All Microsoft </div>
                 <div class="mx-2 hidden">
-                    <img class="w-3 mr-4 " src="./images//src/search.svg" alt="">
+                    <img class=" w-6 mr-4 " src="./images/search.png" alt="">
                 </div>
                 <div class="flex">
                     <img class="w-4 h-4 mr-4" src="./images/iconmonstr-shopping-cart-thin.png" alt="">
-                    <img class="w-4 h-4 mr-8" src="./images/iconmonstr-user-circle-thin.png" alt="">
+                    <img class="w-4 h-4 mr-4" src="./images/iconmonstr-user-circle-thin.png" alt="">
                 </div>
             </div>
         </div>
 
 
         <div class="slider flex flex-col-reverse md:flex-row md:bg-gray-100">
-            <div class="left flex flex-col md:items-baseline py-6 md:py-12">
+            <div class="left flex flex-col md:items-baseline py-6 tablet:top-0 box-border border-gray-100 ">
                 <p class="text-red-900 bg-white ml-8 p-3">New</p>
                 <h1 class="text-2xl font-medium text-left md:text-4xl mx-6">Surface Pro 9</h1>
                 <p class=" mx-6 text-left font-normal md:text-left">Keep spirits bright with a game-changing combo of
@@ -60,9 +62,9 @@
                     power and tablet flexibility—all in one h1tra-portable device</p>
                 <button class="text-white bg-black w-fit px-3 py-2 my-6 font-bold mx-5">Learn more</button>
             </div>
-            <div class="right">
+            <div class="right md:w-7/12 w-full flex-shrink-0">
                 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-All-Colors-FY23HOL:VP1-539x440"
-                    alt="" class="w-[60rem] md:w-[64rem]" />
+                    alt="" class="w-full h-auto" />
             </div>
         </div>
 
@@ -181,7 +183,7 @@
             <br>
             <br>
         </div>
-        <footer class="text-[#616161] bg-purple-100 flex flex-col pt-2">
+        <footer class="text-[#616161] bg-[rgb(242,242,242)] grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 pt-2">
             <div class="m-5 space-y-3">
                 <h1 class="text-[16px] font-medium">What's new</h1>
                    <p class="text-[11px]">Microsoft 365</p>
